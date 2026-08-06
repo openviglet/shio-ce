@@ -1,0 +1,127 @@
+# Viglet Shio
+
+> A headless CMS whose primary operator is a coding agent. The agent builds the site
+> (MCP tools, content as files, blueprints); the human curates (React console, Universal
+> Editor, preview links); the Content Delivery API delivers (REST/GraphQL + TypeScript
+> SDKs). Open source, self-hosted. Shio hosts no model and no prompts — it is the
+> substrate an external agent drives.
+
+## Read the Markdown, not the HTML
+
+Every route on this site is also published as Markdown at `<path>.md` — the same content,
+converted from the same render, with the navigation and the footer left out. Across the ten
+routes that is about 64 KB of Markdown against 465 KB of HTML.
+
+- `/` → https://shio.viglet.org/index.md
+- any other route → append `.md`, e.g. https://shio.viglet.org/features/rendering.md
+- https://shio.viglet.org/manifest.json — the routes, their twins and their sizes, in the
+  shape `/api/v2/agent/manifest` uses
+
+## Pages on this site
+
+- [/](https://shio.viglet.org/): what Shio is, one section per design law
+- [/claude-code](https://shio.viglet.org/claude-code): install the plugin or the bare MCP
+  bridge, the three calls a session opens with, and the AGENT token scope
+- [/compare](https://shio.viglet.org/compare): agent-operability against Contentful,
+  Sanity, Strapi and WordPress, plus where each of them wins
+- [/replicate](https://shio.viglet.org/replicate): capture an existing site with shio clone,
+  the fidelity-versus-authorable decision, and the bounds the crawl keeps
+- [/curator](https://shio.viglet.org/curator): the human half - the review queue, preview
+  links, inline editing, and the six gates that stop an agent write
+- [/features/agent-gateway](https://shio.viglet.org/features/agent-gateway): the manifest,
+  the context pack, planned batches and teaching errors
+- [/features/content-as-files](https://shio.viglet.org/features/content-as-files): the
+  Markdown projection, the field table and the three-way merge
+- [/features/blueprints](https://shio.viglet.org/features/blueprints): the package format
+  and the rules that keep it from becoming a third contract
+- [/features/rendering](https://shio.viglet.org/features/rendering): layouts, regions, the
+  section vocabulary and design tokens in the W3C DTCG shape
+- [/features/delivery](https://shio.viglet.org/features/delivery): REST, GraphQL, the
+  zero-dependency client, the generated Next.js starter and the token scopes
+
+## Start here
+
+- Manifest first: `GET /api/v2/agent/manifest` — capabilities, limits and a curated
+  endpoint index. Unshipped capabilities are reported `false`, never omitted; where a
+  capability lives elsewhere, `elsewhere` names the command to use instead.
+- Then one call for everything else: `GET /api/v2/agent/context?include=all,manifest,ops`
+  — the content model, the sitemap, the conventions and the write vocabulary, with a
+  digest so a later session can skip re-reading it.
+
+## Attach it to Claude Code
+
+```
+claude mcp add shio -- npx @viglet/shio mcp
+```
+
+`POST /mcp` speaks JSON-RPC 2.0 (revision 2025-06-18). `GET /mcp` is a deliberate 405:
+this server sends nothing unprompted.
+
+## MCP tools
+
+`shio_context` · `shio_find` · `shio_read` · `shio_write` · `shio_apply` ·
+`shio_publish` · `shio_assets` · `shio_changes` · `shio_verify` · `shio_digest` ·
+`shio_remember`
+
+## MCP resources
+
+`shio://manifest` · `shio://context` · `shio://ops` · `shio://blueprints` ·
+`shio://schema/{postType}` · `shio://blueprint/{name}`
+
+## Endpoints an agent uses
+
+- `GET /api/v2/agent/manifest` — capabilities, limits, a curated endpoint index
+- `GET /api/v2/agent/context` — model, sitemap, conventions, write vocabulary, digest
+- `GET /api/v2/agent/find` · `GET /api/v2/agent/read` — search and read
+- `POST /api/v2/agent/batch` — the write vocabulary; `dryRun` plans instead of applying
+- `GET /api/v2/agent/verify` · `GET /api/v2/agent/render` — the lint and the render digest
+- `GET /api/v2/agent/changes` · `GET /api/v2/agent/diagnostics` · `/api/v2/agent/memory`
+- `GET /api/v2/cda/**` — the delivery API; `POST /api/graphql` for the GraphQL shape
+- `POST /mcp` — the same capabilities over MCP
+
+## Addresses
+
+- `post:<site>/<friendly-url>` — a post. A site's home page is `post:<site>/`.
+- `folder:<site>/<name-chain>` — a folder, by the names a human reads.
+- `site:<name>` — the site itself.
+- `id:<uuid>` — reads only. Writes take `post:` and `folder:` alone.
+
+## CLI — @viglet/shio
+
+`shio init` · `shio pull|push [--content]` · `shio apply [--check|--blueprint]` ·
+`shio verify [--delivery|--strict]` · `shio digest` · `shio audit <page>` ·
+`shio snapshot <page>` · `shio clone <url>` · `shio changes` · `shio report` ·
+`shio remember` · `shio mcp` · `shio dev` · `shio deploy`
+
+## Packages
+
+- `@viglet/shio` — the CLI, and the MCP stdio bridge
+- `@viglet/shio-client` — framework-agnostic delivery client, zero runtime dependencies
+- `@viglet/shio-react-sdk` — hooks and render components over that core
+- `@viglet/shio-sections` — the page-section vocabulary shared by agent, console and front end
+- `@viglet/create-shio-app` — generates a Next.js App Router site wired to a site's content
+- `@viglet/shio-editor-cors` — the Universal Editor bridge for inline editing
+
+## The ten design laws
+
+A feature that breaks one is wrong even if it was requested.
+
+- P1 Agent-first design order — every capability lands MCP → files/CLI → REST → console.
+- P2 One call replaces a session — discovery is a product feature, not a docs problem.
+- P3 Tokens are a measured budget — a token regression fails the build.
+- P4 Files beat APIs for authoring — Edit, Write and Grep are the cheapest tools.
+- P5 Determinism over cleverness — stable ordering, path addressing, idempotent writes.
+- P6 Errors are instructions — every 4xx carries fix, allowed, didYouMean, example.
+- P7 Never surprise the human — draft-default, dry-run, explicit publish, confirm tokens.
+- P8 Skipping steps needs appliable units — blueprints, not prose recipes.
+- P9 Close the perception loop — cheap textual proof instead of a human round trip.
+- P10 Compose, don't fork — MCP is a shape over the delivery API, never a third contract.
+
+## Links
+
+- Documentation: https://docs.viglet.org/shio/
+- Source: https://github.com/openviglet/shio
+- The design laws: https://github.com/openviglet/shio/blob/HEAD/agents.md
+- The concept spec: https://github.com/openviglet/shio/blob/HEAD/docs/specs/SH74-agent-native-cms.md
+- Roadmap: https://github.com/openviglet/shio/blob/HEAD/docs/ROADMAP.md
+- Sibling product — enterprise search: https://turing.viglet.org
