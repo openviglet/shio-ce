@@ -3,7 +3,7 @@
     "name": "Viglet Shio",
     "kind": "marketing-site",
     "origin": "https://shio.viglet.org",
-    "builtAt": "2026-08-06T21:02:24.461Z"
+    "builtAt": "2026-08-07T10:57:04.962Z"
   },
   "startHere": "Every route has a Markdown twin at <path>.md — fetch that instead of the HTML. /llms.txt is the whole product in one file.",
   "routes": [
@@ -13,7 +13,7 @@
       "title": "Viglet Shio — the CMS whose operator is Claude Code",
       "description": "An open-source, self-hosted headless CMS designed for a coding agent: MCP-native, one call replaces a discovery session, content lives as files, every 4xx carries the fix, and every write lands as a draft a human approves.",
       "bytes": {
-        "html": 144872,
+        "html": 146925,
         "markdown": 23000
       }
     },
