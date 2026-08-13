@@ -1,0 +1,216 @@
+[
+  {
+    "id": "shio-blueprint-blog",
+    "title": "Blog",
+    "description": "An Article post-type, a /blog folder and three published sample posts. The starting point for anything with a feed: the model is the part that is tedious to get right, and the samples show the field usage a later session should match.",
+    "version": "1.0.0",
+    "author": "Viglet",
+    "category": "first-party",
+    "tags": [],
+    "icon": "blog",
+    "downloadUrl": "https://shio.viglet.org/marketplace/shio-blueprint-blog/shio-blueprint-blog.zip",
+    "readmeUrl": "https://shio.viglet.org/marketplace/shio-blueprint-blog/README.md",
+    "params": {
+      "type": "object",
+      "properties": {
+        "blogTitle": {
+          "type": "string",
+          "description": "The blog's name, used in the sample copy.",
+          "default": "Blog"
+        },
+        "authorName": {
+          "type": "string",
+          "description": "Byline on the sample posts.",
+          "default": "Editorial"
+        },
+        "projectName": {
+          "type": "string",
+          "description": "The npm package name of the generated project. Used in the front-end tree this package carries.",
+          "default": "my-shio-site"
+        }
+      }
+    },
+    "requires": []
+  },
+  {
+    "id": "shio-blueprint-docs",
+    "title": "Documentation",
+    "description": "A documentation tree: a DocPage post-type, /docs with guides and reference sections, and four pages wired together — an index, two guides and one reference page.",
+    "version": "1.0.0",
+    "author": "Viglet",
+    "category": "first-party",
+    "tags": [],
+    "icon": "docs",
+    "downloadUrl": "https://shio.viglet.org/marketplace/shio-blueprint-docs/shio-blueprint-docs.zip",
+    "readmeUrl": "https://shio.viglet.org/marketplace/shio-blueprint-docs/README.md",
+    "params": {
+      "type": "object",
+      "required": [
+        "productName"
+      ],
+      "properties": {
+        "productName": {
+          "type": "string",
+          "description": "What the documentation is about. It has no sensible default."
+        },
+        "projectName": {
+          "type": "string",
+          "description": "The npm package name of the generated project. Used in the front-end tree this package carries.",
+          "default": "my-shio-site"
+        }
+      }
+    },
+    "requires": []
+  },
+  {
+    "id": "shio-blueprint-landing",
+    "title": "Landing page",
+    "description": "One campaign page at /get-started, composed of a hero, a feature grid, an FAQ and a call to action from the @viglet/shio-sections vocabulary. The smallest useful blueprint: apply it, edit four sections, ship.",
+    "version": "1.0.0",
+    "author": "Viglet",
+    "category": "first-party",
+    "tags": [],
+    "icon": "landing",
+    "downloadUrl": "https://shio.viglet.org/marketplace/shio-blueprint-landing/shio-blueprint-landing.zip",
+    "readmeUrl": "https://shio.viglet.org/marketplace/shio-blueprint-landing/README.md",
+    "params": {
+      "type": "object",
+      "required": [
+        "brand"
+      ],
+      "properties": {
+        "brand": {
+          "type": "string",
+          "description": "The company or product name."
+        },
+        "headline": {
+          "type": "string",
+          "description": "The hero heading — the one sentence the page is about.",
+          "default": "Start in an afternoon, not a quarter"
+        },
+        "ctaLabel": {
+          "type": "string",
+          "description": "Label on the call to action.",
+          "default": "Get started"
+        },
+        "ctaHref": {
+          "type": "string",
+          "description": "Where the call to action points.",
+          "default": "/signup"
+        },
+        "projectName": {
+          "type": "string",
+          "description": "The npm package name of the generated project. Used in the front-end tree this package carries.",
+          "default": "my-shio-site"
+        }
+      }
+    },
+    "requires": []
+  },
+  {
+    "id": "shio-blueprint-marketing-site",
+    "title": "Marketing site",
+    "description": "A three-page marketing site built from the @viglet/shio-sections vocabulary: home, pricing and about, each composed of known sections (hero, feature grid, logo wall, testimonials, FAQ, call to action). The React components that render these sections ship in @viglet/shio-sections, so the front end is a dependency rather than a rewrite.",
+    "version": "1.0.0",
+    "author": "Viglet",
+    "category": "first-party",
+    "tags": [],
+    "icon": "marketing-site",
+    "downloadUrl": "https://shio.viglet.org/marketplace/shio-blueprint-marketing-site/shio-blueprint-marketing-site.zip",
+    "readmeUrl": "https://shio.viglet.org/marketplace/shio-blueprint-marketing-site/README.md",
+    "params": {
+      "type": "object",
+      "required": [
+        "brand"
+      ],
+      "properties": {
+        "brand": {
+          "type": "string",
+          "description": "The company or product name. Appears in every heading, so there is no useful default."
+        },
+        "tagline": {
+          "type": "string",
+          "description": "One line under the hero heading.",
+          "default": "Software that gets out of the way"
+        },
+        "ctaLabel": {
+          "type": "string",
+          "description": "Label on the primary call to action.",
+          "default": "Talk to us"
+        },
+        "ctaHref": {
+          "type": "string",
+          "description": "Where the primary call to action points.",
+          "default": "/contact"
+        },
+        "projectName": {
+          "type": "string",
+          "description": "The npm package name of the generated project. Used in the front-end tree this package carries.",
+          "default": "my-shio-site"
+        }
+      }
+    },
+    "requires": []
+  },
+  {
+    "id": "shio-blueprint-nextjs-starter",
+    "title": "Next.js starter",
+    "description": "The first-party starter, whole: a Page model, two published pages, and the Next.js App Router project that renders them — catch-all routing, ISR, draft preview, signed revalidation. Same tree as `npm create shio-app`, with the content.",
+    "version": "1.0.0",
+    "author": "Viglet",
+    "category": "first-party",
+    "tags": [],
+    "icon": "nextjs-starter",
+    "downloadUrl": "https://shio.viglet.org/marketplace/shio-blueprint-nextjs-starter/shio-blueprint-nextjs-starter.zip",
+    "readmeUrl": "https://shio.viglet.org/marketplace/shio-blueprint-nextjs-starter/README.md",
+    "params": {
+      "type": "object",
+      "properties": {
+        "projectName": {
+          "type": "string",
+          "description": "The npm package name of the generated project, also used in the README and the welcome page.",
+          "default": "my-shio-site"
+        }
+      }
+    },
+    "requires": []
+  },
+  {
+    "id": "shio-blueprint-product-catalog",
+    "title": "Product catalogue",
+    "description": "A Product post-type with SKU, price and a repeatable spec list, plus /products with an accessories subsection and three sample products.",
+    "version": "1.0.0",
+    "author": "Viglet",
+    "category": "first-party",
+    "tags": [],
+    "icon": "product-catalog",
+    "downloadUrl": "https://shio.viglet.org/marketplace/shio-blueprint-product-catalog/shio-blueprint-product-catalog.zip",
+    "readmeUrl": "https://shio.viglet.org/marketplace/shio-blueprint-product-catalog/README.md",
+    "params": {
+      "type": "object",
+      "properties": {
+        "storeName": {
+          "type": "string",
+          "description": "The store's name, used in the sample copy.",
+          "default": "Store"
+        },
+        "currency": {
+          "type": "string",
+          "description": "Currency code the sample products are priced in.",
+          "default": "USD",
+          "enum": [
+            "USD",
+            "EUR",
+            "BRL"
+          ]
+        },
+        "projectName": {
+          "type": "string",
+          "description": "The npm package name of the generated project. Used in the front-end tree this package carries.",
+          "default": "my-shio-site"
+        }
+      }
+    },
+    "requires": []
+  }
+]

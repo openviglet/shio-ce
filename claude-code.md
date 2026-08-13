@@ -124,7 +124,7 @@ P2 The same three exist as MCP tools — shio_context, shio_write — and as res
 
 ## A scope of its own, and deliberately not a superset
 
-An agent needs to write, and the two credentials that already existed were both wrong: one can patch live content outside the agent protocol's guards, and the other is every capability the human has, with no expiry.
+An agent needs to write, and the two credentials that already existed were both wrong: one can patch live content outside the agent protocol's guards, and the other is every capability the account holder has, with no expiry.
 
 | Scope | Reads | Writes |
 | --- | --- | --- |

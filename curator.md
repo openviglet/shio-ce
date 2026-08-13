@@ -1,4 +1,4 @@
-# The human half — what stops the agent | Viglet Shio
+# The curator’s half — what stops the agent | Viglet Shio
 
 > An agent wrote nine pages last night and nobody has seen them yet. The curator half of Shio: the review queue an agent token cannot reach, expiring preview links, inline editing on the rendered page, draft-published diff and restore, reversible deletes, and the six gates that are on by default rather than configurable.
 
@@ -90,7 +90,7 @@ It works on the built-in renderer and on a front end of your own: a published br
 
 Launching Shio 2026.3
 
-A CMS whose primary operator is a coding agent. The human curates. The delivery API delivers.
+A CMS whose primary operator is a coding agent. The curator approves. The delivery API delivers.
 
 ## Each one is a mechanism, and each one has a reason
 
@@ -140,7 +140,7 @@ If you take one thing from this page, take this — it is the whole product, and
 
 Discovers the model in one call, authors content as files, applies a blueprint, renders a preview and proves the result — without a browser, a cookie or a click.
 
-### The human curates
+### The curator approves
 
 Approves, corrects and tweaks. Everything the agent wrote arrives as a draft with attribution on it, in a queue, with a preview link that opens the real page.
 

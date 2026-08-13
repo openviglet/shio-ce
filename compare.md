@@ -23,6 +23,7 @@ Grouped by the law each one comes from, so what you are looking at reads as one 
 | One call returns the model, the sitemap and the conventions | yes | compose several | compose several | compose several | compose several |
 | A machine-readable capability manifest, with unshipped ones reported false | yes | no | no | no | no |
 | A digest so a later session can skip re-reading it | yes | no | no | no | no |
+| The manifest routes an intent to the one call, instead of listing everything | yes | no | no | no | no |
 | P4Authoring — can the agent use its cheapest tools? |
 | --- |
 | The whole site projected to files, with a three-way merge back | yes | export only | export only | no | no |

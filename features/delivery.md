@@ -52,4 +52,4 @@ Read for published content, preview for drafts, write for the editing path, and 
 ## Next
 
 - [Rendering and themes](/features/rendering)
-- [The human half](/curator)
+- [The curator’s half](/curator)

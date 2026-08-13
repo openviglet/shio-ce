@@ -1,6 +1,6 @@
 # Viglet Shio — the CMS whose operator is Claude Code
 
-> An open-source, self-hosted headless CMS designed for a coding agent: MCP-native, one call replaces a discovery session, content lives as files, every 4xx carries the fix, and every write lands as a draft a human approves.
+> An open-source, self-hosted headless CMS designed for a coding agent: MCP-native, one call replaces a discovery session, content lives as files, every 4xx carries the fix, and every write lands as a draft a curator approves.
 
 Canonical: https://shio.viglet.org/
 
@@ -40,7 +40,7 @@ one file, one post — no API call to author with
 
 1 created · status DRAFT · nothing is live yet
 
-> Prove it before a human looks
+> Prove it before a curator looks
 
 ● shio verify --delivery P9
 
@@ -58,9 +58,9 @@ the handoff, as Markdown
 ## 1 change awaiting review - **Launching Shio 2026.3** - created  preview: /preview/acme/launch ### Open questions- The hero image has no alt text. Intentional?
 ```
 
-One session. One page. Six calls, and a human still decides.
+One session. One page. Six calls, and you still decide.
 
-## The agent builds. The human curates. The API delivers.
+## The agent builds. The curator approves. The API delivers.
 
 Not one operator with a chat box bolted on — three, each with the surface it is actually good at.
 
@@ -72,7 +72,7 @@ Discovers the model in one call, authors content as files, applies a blueprint, 
 - shio CLI
 - /api/v2/agent
 
-### The human curates
+### The curator approves
 
 Approves, corrects and tweaks. Everything the agent wrote arrives as a draft with attribution on it, in a queue, with a preview link that opens the real page.
 
@@ -98,9 +98,9 @@ They are not marketing copy. They are checked into the repository as the rule ev
 - P4 Files beat APIs for authoring Content is projected to disk, because Edit, Write and Grep are an agent's cheapest tools.
 - P5 Determinism over cleverness Stable ordering, path addressing, idempotent writes, byte-identical serialization.
 - P6 Errors are instructions Every 4xx carries fix, allowed, didYouMean and example — so the retry is the next call, not the next session.
-- P7 Never surprise the human Draft-default, dry-run, explicit publish, confirm tokens, attribution, a review queue.
+- P7 Never surprise the curator Draft-default, dry-run, explicit publish, confirm tokens, attribution, a review queue.
 - P8 Skipping steps needs appliable units Blueprints — a package that applies — instead of a recipe written in prose.
-- P9 Close the perception loop Cheap textual proof — a lint, the routes, a render digest — instead of a human round trip.
+- P9 Close the perception loop Cheap textual proof — a lint, the routes, a render digest — instead of asking someone to look.
 - P10 Compose, don't fork MCP is a shape over the delivery API and the console services, never a third contract.
 
 [agents.md](https://github.com/openviglet/shio/blob/HEAD/agents.md) · [the concept spec (SH74)](https://github.com/openviglet/shio/blob/HEAD/docs/specs/SH74-agent-native-cms.md)
@@ -138,8 +138,8 @@ Each task is benchmarked twice — once on the agent surface, once on the id-key
 | --- | --- | --- |
 | Task | Calls | Tokens | Calls | Tokens |
 | --- | --- | --- | --- | --- |
-| Build a marketing site | 4 | 2,700 | 3× | 2× |
-| Add a type and ten posts | 3 | 1,800 | 3.6× | 3× |
+| Build a marketing site | 6 | 3,800 | 3× | 2× |
+| Add a type and ten posts | 3 | 2,100 | 3.6× | 3× |
 | Translate a site | 3 | 800 | 2.6× | 4.5× |
 | Fix a broken link | 3 | 400 | 2× | 10× |
 
@@ -149,7 +149,7 @@ Those last two are floors the suite enforces, not the best number anyone has see
 
 Not a best case — a limit. A response that grows past one of these fails the build the same way a broken test does.
 
-Capability check 380
+Capability check 390
 
 manifest?include=features,limits — what a session opens with
 
@@ -161,13 +161,13 @@ every capability, every limit, a curated endpoint index
 
 response.manifest
 
-Every MCP tool schema 2,375
+Every MCP tool schema 2,500
 
 tools/list, re-sent on every turn before any work happens
 
 mcp.tools.list.total
 
-Build a site, end to end 2,700
+Build a site, end to end 3,800
 
 the whole task, measured to the verify — not to a page a person opened
 
@@ -209,12 +209,12 @@ folder: folder:acme/
 ---
 
 Shio is a CMS whose primary operator is a coding agent.
-The human curates. The delivery API delivers.
+The curator approves. The delivery API delivers.
 ```
 
 ### One address grammar, everywhere P5
 
-The same four forms in the CLI, over REST and over MCP. Writes take only the first two, because an id is not a place a human can name.
+The same four forms in the CLI, over REST and over MCP. Writes take only the first two, because an id is not a place anyone can name.
 
 **post:<site>/<friendly-url>**
 
@@ -222,7 +222,7 @@ a post — and post:acme/ is the home page
 
 **folder:<site>/<name-chain>**
 
-a folder, by the names a human reads
+a folder, by the names a person reads
 
 **site:<name>**
 
@@ -284,6 +284,10 @@ shio_remember
 
 what session N leaves for session N+1
 
+shio_marketplace
+
+packages this instance could install
+
 #### Resources
 
 - shio://manifest
@@ -325,7 +329,7 @@ the browser as an instrument — overflow, contrast, dead requests
 
 **shio snapshot**
 
-a PNG, for the human who has to look
+a PNG, for whoever has to look
 
 **shio clone**
 
@@ -387,7 +391,7 @@ P6 The same rule applies to the CLI: a refusal that teaches nothing is treated a
 
 ## The agent cannot see the page. So the page describes itself.
 
-Asking a human whether it looks right is the round trip that makes an agent slow. Four instruments replace it — three of them text, and the fourth deliberately for a person.
+Asking someone whether it looks right is the round trip that makes an agent slow. Four instruments replace it — three of them text, and the fourth deliberately for a person.
 
 shio verify
 
@@ -409,7 +413,7 @@ Renders at each width and prints findings, not a picture: horizontal overflow re
 
 shio snapshot
 
-### A picture, for the human
+### A picture, for a person
 
 The one output that is deliberately for a person. A per-pixel diff against a baseline, and a draft is stamped as a draft because the image cannot say so itself.
 
@@ -428,7 +432,7 @@ $ shio verify --delivery
 
 P9 A warning exits 0 on purpose. A gate that fires on something a designer signed off is the exit code everybody wraps in || true, and then the errors stop being read too. --strict is there for a project that decided otherwise.
 
-The warnings do not vanish either — shio report restates them as open questions in the handoff a human reads.
+The warnings do not vanish either — shio report restates them as open questions in the handoff a curator reads.
 
 ## An agent with write access to your site. What stops it?
 

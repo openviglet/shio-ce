@@ -34,7 +34,7 @@ No conditionals and no expressions, so the same parameters always produce the sa
 
 ## The model is provisioned, never upserted P8
 
-An existing post type of the same name is left exactly as it is — including a field a human added — and the response names the fields it lacks instead of overwriting them. A plan writes nothing and needs no write transaction, so looking before you write works on a read-only credential.
+An existing post type of the same name is left exactly as it is — including a field a curator added — and the response names the fields it lacks instead of overwriting them. A plan writes nothing and needs no write transaction, so looking before you write works on a read-only credential.
 
 ## Next
 
