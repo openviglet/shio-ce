@@ -1,98 +1,218 @@
-# Viglet Shio — the CMS whose operator is Claude Code
+# Viglet Shio — a complete CMS your agent can drive too
 
-> An open-source, self-hosted headless CMS designed for a coding agent: MCP-native, one call replaces a discovery session, content lives as files, every 4xx carries the fix, and every write lands as a draft a curator approves.
+> An open-source, self-hosted headless CMS with four ways in: a full React console needing no agent at all, an MCP and CLI surface for coding agents, content projected to files for a repository workflow, and REST plus GraphQL delivery with TypeScript SDKs. Same content, same drafts, same publish button.
 
 Canonical: https://shio.viglet.org/
 
 ---
 
-# The CMS whose operator is Claude Code.
+# A complete CMS. Your agent can drive it too.
 
-Your agent builds the site. You approve it. Shio is a headless CMS designed backwards from that sentence — one call replaces a discovery session, content lives as files an agent can `Grep`, and every write lands as a draft with your name on the approve button.
+Write the pages yourself in the console, hand the work to Claude Code, keep the content as files in your repository, or read it all through REST and GraphQL. Four ways in, one content engine — and the same drafts, previews and publish button behind every one of them.
 
-Judged in agent cycles and tokens, not in clicks. Shio hosts no model and no prompts — it is the substrate your agent drives.
+The agent path is what makes Shio unusual, not what makes it usable. Never attach one and nothing is withheld: it is an ordinary headless CMS, and it hosts no model, no prompts and no provider keys.
 
-[Get started](https://docs.viglet.org/shio/) The ten laws
+Find your way in [Use it without an agent](/console) [Docs](https://docs.viglet.org/shio/)
 
-Drafts by default — nothing publishes itself Self-hosted, your database No model, no prompts, no keys in the CMS
+A full console — no agent required Drafts by default — nothing publishes itself Self-hosted, your database, open source
 
-> What is this instance, and what can I do to it?
+Create the site
 
-● shio_context P2
+● Content › Sites › New
 
-model + sitemap + conventions + write vocabulary — 1 call, 1 digest to skip it next time
+a site, its root folder and its home page — nothing else required
 
-> Give me the site on disk
+Shape the model, or keep the one that shipped
 
-● shio pull --content P4
+● Content › Post types
 
-shio/content/** · 42 posts, 9 folders, front-mattered Markdown
+fields, each drawn by one of fifteen widgets — no schema file to write
 
-> Write the launch page
+Write the launch page
 
-● Edit shio/content/acme/launch.md P4
+● Content › acme › New › Page
 
-one file, one post — no API call to author with
+a form built from the type — the same fields, drawn from the same model
 
-> Push it back
+Save it
 
-● shio push --content P7
+● the sticky save bar
 
-1 created · status DRAFT · nothing is live yet
+status DRAFT — the live site is unchanged, exactly as for an agent write
 
-> Prove it before a curator looks
+Look at it, and fix the headline where you can see it
 
-● shio verify --delivery P9
+● Preview · Universal Editor
 
-ok — 0 errors, 1 warning: hero image has no alt text
+the real rendered page, and the field edited on the page itself
 
-> Hand it over
+Publish it, or schedule it
 
-● shio report --since last P7
+● Publish
 
-a Markdown summary with a preview link per change, and the warning as an open question
+an immutable snapshot beside the draft — or a date, and a sweep that fires it
 
-the handoff, as Markdown
+Content › Sites
 
 ```
-## 1 change awaiting review - **Launching Shio 2026.3** - created  preview: /preview/acme/launch ### Open questions- The hero image has no alt text. Intentional?
+acme                    just now
+  ├─ (root folder)
+  └─ Home               DRAFT
+ 
+or: Import a .zip export of a site you already have
 ```
 
-One session. One page. Six calls, and you still decide.
+Six screens. One page, published — and no agent involved.
 
-## The agent builds. The curator approves. The API delivers.
+## Pick the way you already work. It is the same CMS underneath.
 
-Not one operator with a chat box bolted on — three, each with the surface it is actually good at.
+These are not tiers, and not a migration path you commit to once. They are four surfaces over one content engine — the same posts, the same drafts, the same publish act — and a site can be worked on through all four in the same week.
 
-### The agent builds
+### By hand, in the console
 
-Discovers the model in one call, authors content as files, applies a blueprint, renders a preview and proves the result — without a browser, a cookie or a click.
+editors, marketers, anyone who has used a CMS before
 
-- MCP
-- shio CLI
-- /api/v2/agent
+Create the site, shape the content model, write the pages, upload the media, publish or schedule it, and add the rest of the team. No agent, no terminal, no YAML — a CMS behaving the way a CMS is expected to behave.
 
-### The curator approves
-
-Approves, corrects and tweaks. Everything the agent wrote arrives as a draft with attribution on it, in a queue, with a preview link that opens the real page.
+What it takes: a browser and a login
 
 - React console
 - Universal Editor
 - Preview links
 
-### The CDA delivers
+### With a coding agent
 
-A framework-agnostic delivery API — REST and GraphQL — with TypeScript SDKs, a React SDK and a Next.js starter that is generated rather than copied.
+anyone who already works with Claude Code or another MCP client
+
+Discovery in one call, content authored as files, blueprints applied as units, a render digest instead of a screenshot. The agent writes drafts and cannot publish them — which is what makes handing it write access reasonable.
+
+What it takes: one command to attach it
+
+- MCP
+- shio CLI
+- /api/v2/agent
+
+### As files, in your repository
+
+teams who would rather review content in a pull request
+
+Pull the whole site to disk as front-mattered Markdown, edit it with the editor you already use, push it back through a three-way merge — and put shio apply --check in CI so drift fails a build instead of surprising somebody.
+
+What it takes: the CLI and a repo
+
+- shio pull / push
+- shio apply --check
+- Git
+
+### Through the delivery API
+
+front-end and platform engineers
+
+Headless in the ordinary sense: REST and GraphQL, a TypeScript client with zero runtime dependencies, a React SDK, a generated Next.js starter, and a bridge that makes your own front end inline-editable.
+
+What it takes: a token
 
 - REST
 - GraphQL
 - @viglet/shio-client
 
+The design laws below say every capability lands on the agent surface first. That is a rule about the order things are *built* in, so nothing ends up reachable only by a mouse — it has never been a rule about who is allowed to operate the CMS.
+
+## Six shapes a real deployment takes. Only three involve an agent.
+
+The first one is the case a headline about coding agents accidentally argues you out of, so it goes first: a team that wants a CMS, and gets one.
+
+### A team that just wants a CMS
+
+a marketing or comms team, no agent anywhere in sight
+
+Someone creates the site, defines the types, and the team writes pages in a form and publishes them. Everything an editor touches is the console. The agent surface sits there unused, costing nothing — and the day somebody wants it, no content has to move.
+
+- console
+
+### A front end you wrote, content someone else owns
+
+an engineering team with a Next.js app and non-technical editors
+
+The delivery API feeds your application and the console is where the copy lives. Add the editor bridge and your own pages become inline-editable, so a reviewer fixes a headline on the real page rather than hunting for a field in a form.
+
+- API
+- console
+
+### An agent does the first build; people keep it
+
+a small team with a large site to stand up
+
+The agent applies a blueprint, writes forty pages and proves them against the lint — all as drafts. Then it stops being interesting: the people who maintain the site work in the console, and the agent comes back only for the next bulk job.
+
+- agent
+- console
+
+### Content reviewed like code
+
+a docs or product team already living in pull requests
+
+The site projects to Markdown in your repository, changes arrive as a diff a reviewer can read, and CI runs the drift check and the content lint before a merge. Publishing stays a separate, deliberate act on the instance.
+
+- files
+- console
+
+### An old site that has to become an editable one
+
+an agency, or whoever inherited the site nobody can change
+
+Capture the existing site under robots.txt, review what the crawl proposes, convert it into drafts, and prove by arithmetic that nothing was lost. What you get at the end is content in a model — not a screenshot with a CMS behind it.
+
+- agent
+- console
+
+### Many sites, one instance
+
+a platform team serving several brands or clients
+
+Tenant isolation reaches every surface, including the agent's. Scoped API tokens, roles and groups, webhooks on publish, and an activity log that says who changed what — whether the who was a person or a credential you issued.
+
+- console
+- API
+- agent
+
+## The person creates and decides. The agent builds, if there is one. The API delivers.
+
+Three seats over one content engine, each with the surface it is actually good at — and any of them can be empty.
+
+### The person creates, and decides
+
+Sites, content models, folders, pages, media, publishing, scheduling, the rest of the team — all of it in the console, and none of it needing an agent to have happened first. When there is an agent, this seat also holds the approve button.
+
+- React console
+- Universal Editor
+- Preview links
+
+### The agent builds — if you want one
+
+Discovers the model in one call, authors content as files, applies a blueprint, renders a preview and proves the result — without a browser, a cookie or a click. Its writes are drafts, and its credential cannot publish them.
+
+- MCP
+- shio CLI
+- /api/v2/agent
+
+### The delivery API delivers
+
+A framework-agnostic delivery API — REST and GraphQL — with TypeScript SDKs, a React SDK and a Next.js starter that is generated rather than copied. It serves whatever the other two seats agreed on.
+
+- REST
+- GraphQL
+- @viglet/shio-client
+
+One person can hold all three. Most instances start that way: somebody creates the site, writes the pages and points a front end at them, and no agent is ever issued a token. The seats describe what a surface is *for* — not a staffing requirement.
+
 ## Ten laws. A feature that breaks one is wrong even if requested.
 
 They are not marketing copy. They are checked into the repository as the rule every contributor and every agent works under, and each one below has a section on this page that shows it rather than claims it.
 
-- P1 Agent-first design order Every capability lands MCP → files/CLI → REST → console. A console-only feature is incomplete.
+They govern how the product is *built* — what a feature must reach before it can ship. None of them is a condition on how you use it: a team that never attaches an agent gets every capability the ten laws forced into existence.
+
+- P1 Agent-first design order Every capability lands MCP → files/CLI → REST → console. A console-only feature is incomplete — and the order is about what may not be skipped on the way to shipping, never about who is allowed to operate the CMS.
 - P2 One call replaces a session Discovery is a product feature — a manifest and a context pack — not a documentation problem.
 - P3 Tokens are a measured budget Response budgets plus a CI benchmark. A token regression fails the build like any other test.
 - P4 Files beat APIs for authoring Content is projected to disk, because Edit, Write and Grep are an agent's cheapest tools.
@@ -105,9 +225,9 @@ They are not marketing copy. They are checked into the repository as the rule ev
 
 [agents.md](https://github.com/openviglet/shio/blob/HEAD/agents.md) · [the concept spec (SH74)](https://github.com/openviglet/shio/blob/HEAD/docs/specs/SH74-agent-native-cms.md)
 
-## Six surfaces, one operator
+## Six capabilities, reachable from every door
 
-Each of these exists because a coding agent needed it, and each one has a CLI verb and an MCP tool before it has a console screen.
+Each of these got its CLI verb and its MCP tool before it got a console screen — which is the design order, not a restriction. What a capability is reachable from is a separate question, and the answer is: all four ways in.
 
 [The agent gateway MCP over the same services the console uses, a manifest that answers first, and a context pack that ends the discovery session. See it](/features/agent-gateway) [Content as files The whole site projected to disk with a three-way merge behind it, so authoring is Edit and Write rather than a REST call per field. See it](/features/content-as-files) [Blueprints Appliable units instead of prose recipes — post types, folders, content and carried files, converged in one transaction. See it](/features/blueprints) [Render and prove Pages, layouts, regions and a section vocabulary — with a digest, a lint and an audit that make a page checkable without a screenshot. See it](/features/rendering) [Replication Point it at a site that already exists and get one a curator can edit — capture, convert, prove. See it](/replicate) [Delivery REST and GraphQL, a zero-dependency TypeScript client, a React SDK and a generated Next.js starter. See it](/features/delivery)
 
@@ -208,8 +328,8 @@ status: DRAFT
 folder: folder:acme/
 ---
 
-Shio is a CMS whose primary operator is a coding agent.
-The curator approves. The delivery API delivers.
+An open-source headless CMS with four ways in: the console,
+an agent, files in a repository, and the delivery API.
 ```
 
 ### One address grammar, everywhere P5

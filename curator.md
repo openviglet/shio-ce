@@ -90,7 +90,7 @@ It works on the built-in renderer and on a front end of your own: a published br
 
 Launching Shio 2026.3
 
-A CMS whose primary operator is a coding agent. The curator approves. The delivery API delivers.
+An open-source headless CMS with four ways in: the console, an agent, files in a repository, and the delivery API.
 
 ## Each one is a mechanism, and each one has a reason
 
@@ -132,20 +132,20 @@ The history is written and readable, with an Activity view in the console. A pub
 
 Because Reviewing a change you cannot attribute is reviewing a rumour.
 
-## Three jobs, and only one of them is yours
+## Three seats, and you can hold all of them
 
 If you take one thing from this page, take this — it is the whole product, and it is the answer to “so what does the CMS actually do now”.
 
-### The agent builds
+### The person creates, and decides
 
-Discovers the model in one call, authors content as files, applies a blueprint, renders a preview and proves the result — without a browser, a cookie or a click.
+Sites, content models, folders, pages, media, publishing, scheduling, the rest of the team — all of it in the console, and none of it needing an agent to have happened first. When there is an agent, this seat also holds the approve button.
 
-### The curator approves
+### The agent builds — if you want one
 
-Approves, corrects and tweaks. Everything the agent wrote arrives as a draft with attribution on it, in a queue, with a preview link that opens the real page.
+Discovers the model in one call, authors content as files, applies a blueprint, renders a preview and proves the result — without a browser, a cookie or a click. Its writes are drafts, and its credential cannot publish them.
 
-### The CDA delivers
+### The delivery API delivers
 
-A framework-agnostic delivery API — REST and GraphQL — with TypeScript SDKs, a React SDK and a Next.js starter that is generated rather than copied.
+A framework-agnostic delivery API — REST and GraphQL — with TypeScript SDKs, a React SDK and a Next.js starter that is generated rather than copied. It serves whatever the other two seats agreed on.
 
-A reader who only ever sees the first of those three concludes, correctly, that nobody is minding the site. The second one is this page.
+The first seat is the one that is never empty, and this page is what it is holding. The second can stay empty forever — [an instance with no agent attached](/console) is an ordinary CMS, with the same review queue, the same previews and the same publish act described above.

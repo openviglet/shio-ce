@@ -89,13 +89,17 @@ If nobody on the project is going to drive it with an agent, most of what this p
 
 ## The five questions this page usually gets
 
+**Do I have to use an agent?**
+
+No, and nothing is withheld if you never attach one. A person creates the site, defines the content model, writes and publishes the pages, uploads the media and manages the team — in a React console, with a visual editor that edits the rendered page. Agent-first is the order a capability is *built* in (law P1): MCP, then files and the CLI, then REST, then the console. It is a rule about what may not be skipped on the way to shipping something, not a condition on who is allowed to operate it.
+
 **Everyone has an MCP server now. Isn't that the same thing?**
 
 An MCP server is a transport. Put one over an API designed for a browser and the agent gets that API's protocol quality — the same UUID plumbing, the same 400 with no instruction, the same discovery session. The difference this page is about is what the protocol guarantees underneath, which is why every row above is a property you can test rather than a feature you can be told about.
 
-**Do I have to use an agent?**
+**Our editors will never open a terminal. Is the console a second-class citizen?**
 
-No. There is a React console a curator works in, a delivery API with TypeScript SDKs, a Next.js starter and a visual editor that edits the rendered page. The agent-first ordering means every capability reaches the agent first — not that it reaches nobody else.
+It is the surface the product is judged on by everyone who is not an agent, and it carries the whole ordinary job: sites, folders, post types with fifteen field widgets, a media library, search, a trash that restores, publishing and scheduling, users, groups, roles and tokens. Four things genuinely live on the command line — capturing an existing site, applying a blueprint, the browser audit and the file projection — and each is named on the console page rather than left for you to discover.
 
 **Java and Spring, in 2026?**
 
