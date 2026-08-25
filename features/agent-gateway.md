@@ -21,8 +21,9 @@ the cheapest read on the surface
 ```
 GET /api/v2/agent/manifest?include=features,limits
 
-# 298 tokens. The full document is 2343, and the difference
-# is the reason this projection exists.
+# At most 390 tokens, a ceiling the build enforces. The
+# full document's is 2820, and the difference is
+# the reason this projection exists.
 ```
 
 ## One call for the model, the sitemap and the conventions P2

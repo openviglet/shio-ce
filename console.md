@@ -128,7 +128,7 @@ The console browses and installs packages, with the dry run shown first. Applyin
 
 ### Screenshots and the browser audit
 
-shio audit and shio snapshot drive a real browser. That stays in the CLI, where the shell already is — the instance running Chromium per request is a different operational thing entirely.
+shio audit and shio snapshot drive a real browser. That stays in the CLI, where the shell already is — an instance that starts a browser per request is a second service to operate, and nothing else about the CMS needs one.
 
 - 4
 

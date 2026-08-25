@@ -21,7 +21,7 @@ this instance can see it, and nothing is written to your content until you apply
 
 ## What it provisions
 
-- 8 post type(s)
+- 11 post type(s)
 - 1 content document(s)
 - 14 front-end file(s) for you to write
 

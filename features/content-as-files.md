@@ -32,7 +32,7 @@ An open-source headless CMS with four ways in.
 
 ## The field set is a table with a test P5
 
-Ten keys travel, and everything a post carries that the projection drops is declared with a reason in a test. That table exists because a round-trip guard can test the values of fields the format has and cannot see a field it lacks — so the thing that would otherwise be discovered by somebody losing content is an assertion instead.
+Eleven keys travel, and everything a post carries that the projection drops is declared with a reason in a test. That table exists because a round-trip guard can test the values of fields the format has and cannot see a field it lacks — so the thing that would otherwise be discovered by somebody losing content is an assertion instead.
 
 ## The merge happens in the projection's own domain P5
 

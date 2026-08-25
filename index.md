@@ -72,7 +72,7 @@ These are not tiers, and not a migration path you commit to once. They are four 
 
 editors, marketers, anyone who has used a CMS before
 
-Create the site, shape the content model, write the pages, upload the media, publish or schedule it, and add the rest of the team. No agent, no terminal, no YAML — a CMS behaving the way a CMS is expected to behave.
+Create the site, shape the content model, write the pages, upload the media, publish or schedule it, and add the rest of the team — in a browser, with no agent, no terminal and no file to hand-edit anywhere in it.
 
 What it takes: a browser and a login
 
@@ -229,7 +229,7 @@ They govern how the product is *built* — what a feature must reach before it c
 
 Each of these got its CLI verb and its MCP tool before it got a console screen — which is the design order, not a restriction. What a capability is reachable from is a separate question, and the answer is: all four ways in.
 
-[The agent gateway MCP over the same services the console uses, a manifest that answers first, and a context pack that ends the discovery session. See it](/features/agent-gateway) [Content as files The whole site projected to disk with a three-way merge behind it, so authoring is Edit and Write rather than a REST call per field. See it](/features/content-as-files) [Blueprints Appliable units instead of prose recipes — post types, folders, content and carried files, converged in one transaction. See it](/features/blueprints) [Render and prove Pages, layouts, regions and a section vocabulary — with a digest, a lint and an audit that make a page checkable without a screenshot. See it](/features/rendering) [Replication Point it at a site that already exists and get one a curator can edit — capture, convert, prove. See it](/replicate) [Delivery REST and GraphQL, a zero-dependency TypeScript client, a React SDK and a generated Next.js starter. See it](/features/delivery)
+[The agent gateway MCP over the same services the console uses, a manifest that answers first, and a context pack that ends the discovery session. See it](/features/agent-gateway) [Content as files The whole site projected to disk with a three-way merge behind it, so authoring is Edit and Write rather than a REST call per field. See it](/features/content-as-files) [Blueprints Appliable units instead of prose recipes — post types, folders, content and carried files, converged in one transaction. See it](/features/blueprints) [Render and prove Pages, layouts, regions and a section vocabulary — with a digest, a lint and an audit that make a page checkable without a screenshot. See it](/features/rendering) [Replication Point it at a site that already exists and get one a curator can edit — capture, convert, prove, and a verdict that says when to stop. See it](/replicate) [Delivery REST and GraphQL, a zero-dependency TypeScript client, a React SDK and a generated Next.js starter. See it](/features/delivery)
 
 ## Discovery is a feature, and it has a price
 
@@ -258,7 +258,7 @@ Each task is benchmarked twice — once on the agent surface, once on the id-key
 | --- | --- | --- |
 | Task | Calls | Tokens | Calls | Tokens |
 | --- | --- | --- | --- | --- |
-| Build a marketing site | 6 | 3,800 | 3× | 2× |
+| Build a marketing site | 6 | 4,000 | 3× | 2× |
 | Add a type and ten posts | 3 | 2,100 | 3.6× | 3× |
 | Translate a site | 3 | 800 | 2.6× | 4.5× |
 | Fix a broken link | 3 | 400 | 2× | 10× |
@@ -275,19 +275,19 @@ manifest?include=features,limits — what a session opens with
 
 response.manifest.check
 
-Full manifest 2,650
+Full manifest 2,820
 
 every capability, every limit, a curated endpoint index
 
 response.manifest
 
-Every MCP tool schema 2,500
+Every MCP tool schema 2,560
 
 tools/list, re-sent on every turn before any work happens
 
 mcp.tools.list.total
 
-Build a site, end to end 3,800
+Build a site, end to end 4,000
 
 the whole task, measured to the verify — not to a page a person opened
 

@@ -1,6 +1,6 @@
 # Shio vs Contentful, Sanity, Strapi and WordPress | Viglet Shio
 
-> An honest comparison on the axis where headless CMSs actually differ: agent-operability. Seventeen checkable questions grouped by the design law each comes from, plus what Contentful, Sanity, Strapi and WordPress are genuinely better at and when to pick them instead.
+> An honest comparison on the axis where headless CMSs actually differ: agent-operability. Eighteen checkable questions grouped by the design law each comes from, plus what Contentful, Sanity, Strapi and WordPress are genuinely better at and when to pick them instead.
 
 Canonical: https://shio.viglet.org/compare
 
@@ -12,7 +12,7 @@ Comparing content types and delivery APIs produces a tie, because everyone has t
 
 The matrix Where Shio loses
 
-## Ten laws, turned into seventeen questions
+## Ten laws, turned into eighteen questions
 
 Grouped by the law each one comes from, so what you are looking at reads as one design position applied repeatedly rather than as a feature list that happens to be long.
 

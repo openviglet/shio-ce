@@ -3,7 +3,7 @@
     "name": "Viglet Shio",
     "kind": "marketing-site",
     "origin": "https://shio.viglet.org",
-    "builtAt": "2026-08-16T13:17:07.147Z"
+    "builtAt": "2026-08-25T11:46:03.601Z"
   },
   "startHere": "Every route has a Markdown twin at <path>.md — fetch that instead of the HTML. /llms.txt is the whole product in one file.",
   "routes": [
@@ -13,8 +13,8 @@
       "title": "Viglet Shio — a complete CMS your agent can drive too",
       "description": "An open-source, self-hosted headless CMS with four ways in: a full React console needing no agent at all, an MCP and CLI surface for coding agents, content projected to files for a repository workflow, and REST plus GraphQL delivery with TypeScript SDKs. Same content, same drafts, same publish button.",
       "bytes": {
-        "html": 186131,
-        "markdown": 28699
+        "html": 186125,
+        "markdown": 28735
       }
     },
     {
@@ -23,8 +23,8 @@
       "title": "Shio without an agent — the CMS in the browser | Viglet Shio",
       "description": "The traditional path, in full: create a site, build the content model with fifteen field widgets, write pages in a form, upload media, preview and edit on the rendered page, publish or schedule, and manage users, roles and tokens — all in the console. Plus the four things that genuinely live on the command line, and what changes if you attach an agent later.",
       "bytes": {
-        "html": 64371,
-        "markdown": 6613
+        "html": 64406,
+        "markdown": 6648
       }
     },
     {
@@ -33,7 +33,7 @@
       "title": "Drive Shio from Claude Code — the plugin, the MCP bridge | Viglet Shio",
       "description": "Hand a Shio CMS instance to Claude Code in one command: the plugin (MCP server, skills, slash commands, AGENTS.md fragment) or a bare stdio bridge, the three calls a session opens with, and the AGENT token scope — which writes on the agent surface only and is deliberately not a superset of a write key.",
       "bytes": {
-        "html": 43656,
+        "html": 43660,
         "markdown": 5968
       }
     },
@@ -41,10 +41,10 @@
       "path": "/compare",
       "markdown": "/compare.md",
       "title": "Shio vs Contentful, Sanity, Strapi and WordPress | Viglet Shio",
-      "description": "An honest comparison on the axis where headless CMSs actually differ: agent-operability. Seventeen checkable questions grouped by the design law each comes from, plus what Contentful, Sanity, Strapi and WordPress are genuinely better at and when to pick them instead.",
+      "description": "An honest comparison on the axis where headless CMSs actually differ: agent-operability. Eighteen checkable questions grouped by the design law each comes from, plus what Contentful, Sanity, Strapi and WordPress are genuinely better at and when to pick them instead.",
       "bytes": {
-        "html": 75929,
-        "markdown": 7939
+        "html": 75927,
+        "markdown": 7937
       }
     },
     {
@@ -53,8 +53,8 @@
       "title": "Replicate an existing site into an editable one | Viglet Shio",
       "description": "Point shio clone at a site that already exists and get one a curator can edit: capture under robots.txt writing no content, a proposal that groups blocks by signature rather than by page, a conversion into drafts, and arithmetic at the end that says whether anything was lost. Fidelity keeps the source appearance; authorable gives editable fields.",
       "bytes": {
-        "html": 47055,
-        "markdown": 9165
+        "html": 51047,
+        "markdown": 10938
       }
     },
     {
@@ -73,8 +73,8 @@
       "title": "The agent gateway — manifest, context pack, batch | Viglet Shio",
       "description": "The namespace shaped for a coding agent rather than a browser: a manifest that reports unshipped capabilities as false and says where a capability lives when it lives elsewhere, a context pack that replaces the discovery session, a write vocabulary you can read before writing, and 4xx bodies that carry the fix.",
       "bytes": {
-        "html": 30485,
-        "markdown": 3027
+        "html": 30575,
+        "markdown": 3069
       }
     },
     {
@@ -83,8 +83,8 @@
       "title": "Content as files — the projection and the three-way merge | Viglet Shio",
       "description": "The whole site projected to one Markdown file per post, with a three-way merge back. The path is the URL, only the draft projects, losslessness beats prettiness, and the field set is a table with a test — so a key the format drops is declared with a reason rather than discovered later.",
       "bytes": {
-        "html": 28383,
-        "markdown": 2839
+        "html": 28386,
+        "markdown": 2842
       }
     },
     {
