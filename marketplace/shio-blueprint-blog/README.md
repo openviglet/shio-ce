@@ -13,9 +13,9 @@ this instance can see it, and nothing is written to your content until you apply
 
 ## Parameters
 
-- `blogTitle` — The blog's name, used in the sample copy. Default: `Blog`.
-- `authorName` — Byline on the sample posts. Default: `Editorial`.
-- `projectName` — The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
+- `blogTitle`: The blog's name, used in the sample copy. Default: `Blog`.
+- `authorName`: Byline on the sample posts. Default: `Editorial`.
+- `projectName`: The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
 
 ## What it provisions
 

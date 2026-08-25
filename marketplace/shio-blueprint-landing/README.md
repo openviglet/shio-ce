@@ -13,11 +13,11 @@ this instance can see it, and nothing is written to your content until you apply
 
 ## Parameters
 
-- `brand` **(required)** — The company or product name.
-- `headline` — The hero heading — the one sentence the page is about. Default: `Start in an afternoon, not a quarter`.
-- `ctaLabel` — Label on the call to action. Default: `Get started`.
-- `ctaHref` — Where the call to action points. Default: `/signup`.
-- `projectName` — The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
+- `brand` **(required)**: The company or product name.
+- `headline`: The hero heading — the one sentence the page is about. Default: `Start in an afternoon, not a quarter`.
+- `ctaLabel`: Label on the call to action. Default: `Get started`.
+- `ctaHref`: Where the call to action points. Default: `/signup`.
+- `projectName`: The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
 
 ## What it provisions
 

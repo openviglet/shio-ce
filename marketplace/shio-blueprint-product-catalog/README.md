@@ -13,9 +13,9 @@ this instance can see it, and nothing is written to your content until you apply
 
 ## Parameters
 
-- `storeName` — The store's name, used in the sample copy. Default: `Store`.
-- `currency` — Currency code the sample products are priced in. Default: `USD`.
-- `projectName` — The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
+- `storeName`: The store's name, used in the sample copy. Default: `Store`.
+- `currency`: Currency code the sample products are priced in. Default: `USD`.
+- `projectName`: The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
 
 ## What it provisions
 

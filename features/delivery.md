@@ -1,4 +1,4 @@
-# Delivery — REST, GraphQL and the TypeScript SDKs | Viglet Shio
+# Delivery: REST, GraphQL and the TypeScript SDKs | Viglet Shio
 
 > Headless where it counts: a framework-agnostic delivery client with zero runtime dependencies, a React SDK over the same core, the shared section vocabulary, a generated Next.js starter and a bridge that makes any front end inline-editable.
 
@@ -14,7 +14,7 @@ The content engine is a JVM service and nothing you build has to know that. What
 
 ## A client that runs wherever your code does
 
-Zero runtime dependencies, which is a constraint rather than a boast: it is what lets the same package work in Node, in a browser, on an edge runtime, in a server component and in a plain script — and what keeps a CMS client from dragging a dependency tree into your bundle.
+Zero runtime dependencies, which is a constraint rather than a boast: it is what lets the same package work in Node, in a browser, on an edge runtime, in a server component and in a plain script, and what keeps a CMS client from dragging a dependency tree into your bundle.
 
 @viglet/shio-client
 
@@ -31,7 +31,7 @@ const page = await shio.post("acme", "launch");
 
 ## The starter is generated, not copied P8
 
-A Next.js App Router site wired to a real site's content, produced by a generator rather than pasted out of a tutorial — and with a blueprint it brings the content half in the same command, so what you get on the first run is a site with pages in it.
+A Next.js App Router site wired to a real site's content, produced by a generator rather than pasted out of a tutorial. With a blueprint it brings the content half in the same command, so what you get on the first run is a site with pages in it.
 
 one command
 
@@ -43,7 +43,7 @@ shio init --blueprint corporate --site acme
 
 ## Inline editing on a front end you wrote
 
-The renderer annotates what it renders, and a published bridge package does the same job for markup you produce yourself. Once a page emits the annotations, a curator clicks the headline on the real page and edits the field that produced it — on the draft, with the same safety as every other write.
+The renderer annotates what it renders, and a published bridge package does the same job for markup you produce yourself. Once a page emits the annotations, a curator clicks the headline on the real page and edits the field that produced it, on the draft, with the same safety as every other write.
 
 ## A token scope per job P7
 

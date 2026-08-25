@@ -13,7 +13,7 @@ this instance can see it, and nothing is written to your content until you apply
 
 ## Parameters
 
-- `projectName` — The npm package name of the generated project, also used in the README and the welcome page. Default: `my-shio-site`.
+- `projectName`: The npm package name of the generated project, also used in the README and the welcome page. Default: `my-shio-site`.
 
 ## What it provisions
 

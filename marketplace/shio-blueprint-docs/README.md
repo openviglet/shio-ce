@@ -13,8 +13,8 @@ this instance can see it, and nothing is written to your content until you apply
 
 ## Parameters
 
-- `productName` **(required)** — What the documentation is about. It has no sensible default.
-- `projectName` — The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
+- `productName` **(required)**: What the documentation is about. It has no sensible default.
+- `projectName`: The npm package name of the generated project. Used in the front-end tree this package carries. Default: `my-shio-site`.
 
 ## What it provisions
 
