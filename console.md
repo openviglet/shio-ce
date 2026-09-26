@@ -2,7 +2,7 @@
 
 > The traditional path, in full: create a site, build the content model with fifteen field widgets, write pages in a form, upload media, preview and edit on the rendered page, publish or schedule, and manage users, roles and tokens. All in the console. Plus the four things that genuinely live on the command line, and what changes if you attach an agent later.
 
-Canonical: https://shio.viglet.org/console
+Canonical: https://shio.viglet.org/console/
 
 ---
 
@@ -158,7 +158,7 @@ Changes arrive in the review queue with a preview link each and the verify warni
 
 Do not issue an AGENT token, and nothing on that surface can write. The capability is additive in the literal sense: the CMS you were running is the CMS you keep.
 
-[What stops an agent write](/curator) [Attach one in a command](/claude-code)
+[What stops an agent write](/curator/) [Attach one in a command](/claude-code/)
 
 ## Run it, and see whether the console is enough for you
 

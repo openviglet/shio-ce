@@ -2,7 +2,7 @@
 
 > The namespace shaped for a coding agent rather than a browser: a manifest that reports unshipped capabilities as false and says where a capability lives when it lives elsewhere, a context pack that replaces the discovery session, a write vocabulary you can read before writing, and 4xx bodies that carry the fix.
 
-Canonical: https://shio.viglet.org/features/agent-gateway
+Canonical: https://shio.viglet.org/features/agent-gateway/
 
 ---
 
@@ -21,8 +21,8 @@ the cheapest read on the surface
 ```
 GET /api/v2/agent/manifest?include=features,limits
 
-# At most 390 tokens, a ceiling the build enforces. The
-# full document's is 2820, and the difference is
+# At most 450 tokens, a ceiling the build enforces. The
+# full document's is 2920, and the difference is
 # the reason this projection exists.
 ```
 
@@ -61,5 +61,5 @@ Every 4xx carries the fix in the body: what was wrong, the near miss if the mist
 
 ## Next
 
-- [Drive it from Claude Code](/claude-code)
-- [Content as files](/features/content-as-files)
+- [Drive it from Claude Code](/claude-code/)
+- [Content as files](/features/content-as-files/)

@@ -2,7 +2,7 @@
 
 > A section of a site the instance can apply: a content model, a folder tree, sample pages, the parameters that make it somebody's, and the promise it keeps about what exists afterwards. A package may not name its own site and may not prune, substitution is one form and nothing else, and everything is validated at load.
 
-Canonical: https://shio.viglet.org/features/blueprints
+Canonical: https://shio.viglet.org/features/blueprints/
 
 ---
 
@@ -38,5 +38,5 @@ An existing post type of the same name is left exactly as it is, including a fie
 
 ## Next
 
-- [Content as files](/features/content-as-files)
-- [Rendering and themes](/features/rendering)
+- [Content as files](/features/content-as-files/)
+- [Rendering and themes](/features/rendering/)

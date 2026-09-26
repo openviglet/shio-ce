@@ -2,7 +2,7 @@
 
 > Point shio clone at a site that already exists and get one a curator can edit: capture under robots.txt writing no content, a proposal that groups blocks by signature rather than by page, a conversion into drafts, and arithmetic at the end that says whether anything was lost. Fidelity keeps the source appearance; authorable gives editable fields.
 
-Canonical: https://shio.viglet.org/replicate
+Canonical: https://shio.viglet.org/replicate/
 
 ---
 
@@ -148,7 +148,7 @@ discards: is what the section genuinely cannot hold: an <iframe>, an onclick, an
 
 ### The stylesheet is read as tokens, not just concatenated
 
-A source's CSS *contains* its palette, its type scale and its spacing rhythm, so a conversion that only appends the file throws all of it away, and the replica then looks right and cannot be changed. Eight groups are lifted into the theme's design tokens, and the report is honest about which ones are real: a declared custom property is genuinely editable, while a literal repeated twenty-three times is the palette by observation and changes nothing until somebody rewires the CSS. [How tokens work →](/features/rendering)
+A source's CSS *contains* its palette, its type scale and its spacing rhythm, so a conversion that only appends the file throws all of it away, and the replica then looks right and cannot be changed. Eight groups are lifted into the theme's design tokens, and the report is honest about which ones are real: a declared custom property is genuinely editable, while a literal repeated twenty-three times is the palette by observation and changes nothing until somebody rewires the CSS. [How tokens work →](/features/rendering/)
 
 ### The loss is computed, never listed
 

@@ -2,7 +2,7 @@
 
 > Pages resolve through layouts and regions to a shared section vocabulary, and a theme carries its design tokens in the W3C DTCG shape that Style Dictionary, Figma and Tokens Studio already export, so the commonest change to a site is a reviewable field edit rather than a stylesheet rewrite.
 
-Canonical: https://shio.viglet.org/features/rendering
+Canonical: https://shio.viglet.org/features/rendering/
 
 ---
 
@@ -46,5 +46,5 @@ Rewrite those twenty-three literals into var() calls across a stranger's stylesh
 
 ## Next
 
-- [Replicate an existing site](/replicate)
-- [Delivery](/features/delivery)
+- [Replicate an existing site](/replicate/)
+- [Delivery](/features/delivery/)

@@ -2,7 +2,7 @@
 
 > An agent wrote nine pages last night and nobody has seen them yet. The curator half of Shio: the review queue an agent token cannot reach, expiring preview links, inline editing on the rendered page, draft-published diff and restore, reversible deletes, and the six gates that are on by default rather than configurable.
 
-Canonical: https://shio.viglet.org/curator
+Canonical: https://shio.viglet.org/curator/
 
 ---
 
@@ -148,4 +148,4 @@ Discovers the model in one call, authors content as files, applies a blueprint, 
 
 A framework-agnostic delivery API (REST and GraphQL) with TypeScript SDKs, a React SDK and a Next.js starter that is generated rather than copied. It serves whatever the other two seats agreed on.
 
-The first seat is the one that is never empty, and this page is what it is holding. The second can stay empty forever: [an instance with no agent attached](/console) is an ordinary CMS, with the same review queue, the same previews and the same publish act described above.
+The first seat is the one that is never empty, and this page is what it is holding. The second can stay empty forever: [an instance with no agent attached](/console/) is an ordinary CMS, with the same review queue, the same previews and the same publish act described above.

@@ -2,7 +2,7 @@
 
 > Headless where it counts: a framework-agnostic delivery client with zero runtime dependencies, a React SDK over the same core, the shared section vocabulary, a generated Next.js starter and a bridge that makes any front end inline-editable.
 
-Canonical: https://shio.viglet.org/features/delivery
+Canonical: https://shio.viglet.org/features/delivery/
 
 ---
 
@@ -51,5 +51,5 @@ Read for published content, preview for drafts, write for the editing path, and 
 
 ## Next
 
-- [Rendering and themes](/features/rendering)
-- [The curator’s half](/curator)
+- [Rendering and themes](/features/rendering/)
+- [The curator’s half](/curator/)

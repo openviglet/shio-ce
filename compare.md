@@ -2,7 +2,7 @@
 
 > An honest comparison on the axis where headless CMSs actually differ: agent-operability. Eighteen checkable questions grouped by the design law each comes from, plus what Contentful, Sanity, Strapi and WordPress are genuinely better at and when to pick them instead.
 
-Canonical: https://shio.viglet.org/compare
+Canonical: https://shio.viglet.org/compare/
 
 ---
 

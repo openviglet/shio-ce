@@ -2,7 +2,7 @@
 
 > Hand a Shio CMS instance to Claude Code in one command: the plugin (MCP server, skills, slash commands, AGENTS.md fragment) or a bare stdio bridge, the three calls a session opens with, and the AGENT token scope, which writes on the agent surface only and is deliberately not a superset of a write key.
 
-Canonical: https://shio.viglet.org/claude-code
+Canonical: https://shio.viglet.org/claude-code/
 
 ---
 

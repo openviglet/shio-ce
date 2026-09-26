@@ -12,7 +12,7 @@ Write the pages yourself in the console, hand the work to Claude Code, keep the 
 
 The agent path is what makes Shio unusual, not what makes it usable. Never attach one and nothing is withheld: it is an ordinary headless CMS, and it hosts no model, no prompts and no provider keys.
 
-Find your way in [Use it without an agent](/console) [Docs](https://docs.viglet.org/shio/)
+Find your way in [Use it without an agent](/console/) [Docs](https://docs.viglet.org/shio/)
 
 A full console, no agent required Drafts by default: nothing publishes itself Self-hosted, your database, open source
 
@@ -229,7 +229,7 @@ They govern how the product is *built*: what a feature must reach before it can 
 
 Each of these got its CLI verb and its MCP tool before it got a console screen, which is the design order, not a restriction. What a capability is reachable from is a separate question, and the answer is: all four ways in.
 
-[The agent gateway MCP over the same services the console uses, a manifest that answers first, and a context pack that ends the discovery session. See it](/features/agent-gateway) [Content as files The whole site projected to disk with a three-way merge behind it, so authoring is Edit and Write rather than a REST call per field. See it](/features/content-as-files) [Blueprints Appliable units instead of prose recipes: post types, folders, content and carried files, converged in one transaction. See it](/features/blueprints) [Render and prove Pages, layouts, regions and a section vocabulary, with a digest, a lint and an audit that make a page checkable without a screenshot. See it](/features/rendering) [Replication Point it at a site that already exists and get one a curator can edit: capture, convert, prove, and a verdict that says when to stop. See it](/replicate) [Delivery REST and GraphQL, a zero-dependency TypeScript client, a React SDK and a generated Next.js starter. See it](/features/delivery)
+[The agent gateway MCP over the same services the console uses, a manifest that answers first, and a context pack that ends the discovery session. See it](/features/agent-gateway/) [Content as files The whole site projected to disk with a three-way merge behind it, so authoring is Edit and Write rather than a REST call per field. See it](/features/content-as-files/) [Blueprints Appliable units instead of prose recipes: post types, folders, content and carried files, converged in one transaction. See it](/features/blueprints/) [Render and prove Pages, layouts, regions and a section vocabulary, with a digest, a lint and an audit that make a page checkable without a screenshot. See it](/features/rendering/) [Replication Point it at a site that already exists and get one a curator can edit: capture, convert, prove, and a verdict that says when to stop. See it](/replicate/) [Delivery REST and GraphQL, a zero-dependency TypeScript client, a React SDK and a generated Next.js starter. See it](/features/delivery/)
 
 ## Discovery is a feature, and it has a price
 
@@ -269,19 +269,19 @@ Those last two are floors the suite enforces, not the best number anyone has see
 
 Not a best case: a limit. A response that grows past one of these fails the build the same way a broken test does.
 
-Capability check 390
+Capability check 450
 
 manifest?include=features,limits: what a session opens with
 
 response.manifest.check
 
-Full manifest 2,820
+Full manifest 2,920
 
 every capability, every limit, a curated endpoint index
 
 response.manifest
 
-Every MCP tool schema 2,560
+Every MCP tool schema 2,975
 
 tools/list, re-sent on every turn before any work happens
 
@@ -584,7 +584,7 @@ Deletes land in the trash with untrash and purge as separate acts, and the file 
 
 P7 And the boundary that is not a setting at all: Shio hosts no model, runs no prompts and holds no provider keys. There is no inference inside the content engine to misfire.
 
-[A curator’s Tuesday, and the reason behind each gate](/curator)
+[A curator’s Tuesday, and the reason behind each gate](/curator/)
 
 ## A recipe is prose. A blueprint applies.
 
@@ -654,7 +654,7 @@ the replica answers its own routes, and the audit says whether the page a reader
 
 One origin, and every off-host link recorded rather than followed. robots.txt is obeyed, and a capture taken with --ignore-robots records that in the inventory, so it can never later be mistaken for one taken with permission. A ceiling marks the capture PARTIAL: there are no silent caps, because a bounded capture read as a complete one is the failure the whole thing is built to prevent. And the capture writes *no content at all*, so the conversion you are asked to review does not already exist.
 
-[The four verbs, the two modes, and what the crawl refuses](/replicate)
+[The four verbs, the two modes, and what the crawl refuses](/replicate/)
 
 ## Headless where it counts: the front end is yours
 
@@ -704,7 +704,7 @@ The axis is agent-operability, not feature count. On everything else (an ecosyst
 
 The honest summary is one row: everywhere else an agent is a client of an API designed for a browser, and the protocol quality it gets is whatever fell out.
 
-[The full matrix, named products, and where Shio loses](/compare)
+[The full matrix, named products, and where Shio loses](/compare/)
 
 ## Your infrastructure, your content, your call
 
