@@ -12,7 +12,7 @@
 
 Every route on this site is also published as Markdown at `<path>.md`: the same content,
 converted from the same render, with the navigation and the footer left out. Across the
-eleven routes that is 79 KB of Markdown against 597 KB of HTML.
+eleven routes that is 79 KB of Markdown against 601 KB of HTML.
 
 - `/` → https://shio.viglet.org/index.md
 - any other route → append `.md`, e.g. https://shio.viglet.org/features/rendering.md

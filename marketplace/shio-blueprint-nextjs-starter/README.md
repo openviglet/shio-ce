@@ -19,7 +19,7 @@ this instance can see it, and nothing is written to your content until you apply
 
 - 1 post type(s)
 - 1 content document(s)
-- 13 front-end file(s) for you to write
+- 15 front-end file(s) for you to write
 
 ---
 

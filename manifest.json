@@ -3,7 +3,7 @@
     "name": "Viglet Shio",
     "kind": "marketing-site",
     "origin": "https://shio.viglet.org",
-    "builtAt": "2026-09-26T15:07:16.277Z"
+    "builtAt": "2026-10-13T20:17:23.269Z"
   },
   "startHere": "Every route has a Markdown twin at <path>.md. Fetch that instead of the HTML. /llms.txt is the whole product in one file.",
   "routes": [
@@ -13,7 +13,7 @@
       "title": "Viglet Shio: a complete CMS your agent can drive too",
       "description": "An open-source, self-hosted headless CMS with four ways in: a full React console needing no agent at all, an MCP and CLI surface for coding agents, content projected to files for a repository workflow, and REST plus GraphQL delivery with TypeScript SDKs. Same content, same drafts, same publish button.",
       "bytes": {
-        "html": 185985,
+        "html": 186379,
         "markdown": 28482
       }
     },
@@ -23,7 +23,7 @@
       "title": "Shio without an agent: the CMS in the browser | Viglet Shio",
       "description": "The traditional path, in full: create a site, build the content model with fifteen field widgets, write pages in a form, upload media, preview and edit on the rendered page, publish or schedule, and manage users, roles and tokens. All in the console. Plus the four things that genuinely live on the command line, and what changes if you attach an agent later.",
       "bytes": {
-        "html": 64458,
+        "html": 64852,
         "markdown": 6606
       }
     },
@@ -33,7 +33,7 @@
       "title": "Drive Shio from Claude Code: the plugin, the MCP bridge | Viglet Shio",
       "description": "Hand a Shio CMS instance to Claude Code in one command: the plugin (MCP server, skills, slash commands, AGENTS.md fragment) or a bare stdio bridge, the three calls a session opens with, and the AGENT token scope, which writes on the agent surface only and is deliberately not a superset of a write key.",
       "bytes": {
-        "html": 43620,
+        "html": 44014,
         "markdown": 5907
       }
     },
@@ -43,7 +43,7 @@
       "title": "Shio vs Contentful, Sanity, Strapi and WordPress | Viglet Shio",
       "description": "An honest comparison on the axis where headless CMSs actually differ: agent-operability. Eighteen checkable questions grouped by the design law each comes from, plus what Contentful, Sanity, Strapi and WordPress are genuinely better at and when to pick them instead.",
       "bytes": {
-        "html": 75891,
+        "html": 76285,
         "markdown": 7900
       }
     },
@@ -53,7 +53,7 @@
       "title": "Replicate an existing site into an editable one | Viglet Shio",
       "description": "Point shio clone at a site that already exists and get one a curator can edit: capture under robots.txt writing no content, a proposal that groups blocks by signature rather than by page, a conversion into drafts, and arithmetic at the end that says whether anything was lost. Fidelity keeps the source appearance; authorable gives editable fields.",
       "bytes": {
-        "html": 51041,
+        "html": 51435,
         "markdown": 10883
       }
     },
@@ -63,7 +63,7 @@
       "title": "The curator’s half: what stops the agent | Viglet Shio",
       "description": "An agent wrote nine pages last night and nobody has seen them yet. The curator half of Shio: the review queue an agent token cannot reach, expiring preview links, inline editing on the rendered page, draft-published diff and restore, reversible deletes, and the six gates that are on by default rather than configurable.",
       "bytes": {
-        "html": 44065,
+        "html": 44459,
         "markdown": 6705
       }
     },
@@ -73,7 +73,7 @@
       "title": "The agent gateway: manifest, context pack, batch | Viglet Shio",
       "description": "The namespace shaped for a coding agent rather than a browser: a manifest that reports unshipped capabilities as false and says where a capability lives when it lives elsewhere, a context pack that replaces the discovery session, a write vocabulary you can read before writing, and 4xx bodies that carry the fix.",
       "bytes": {
-        "html": 30558,
+        "html": 30952,
         "markdown": 3054
       }
     },
@@ -83,7 +83,7 @@
       "title": "Content as files: the projection and the three-way merge | Viglet Shio",
       "description": "The whole site projected to one Markdown file per post, with a three-way merge back. The path is the URL, only the draft projects, losslessness beats prettiness, and the field set is a table with a test, so a key the format drops is declared with a reason rather than discovered later.",
       "bytes": {
-        "html": 28369,
+        "html": 28763,
         "markdown": 2827
       }
     },
@@ -93,7 +93,7 @@
       "title": "Blueprints: appliable units instead of prose recipes | Viglet Shio",
       "description": "A section of a site the instance can apply: a content model, a folder tree, sample pages, the parameters that make it somebody's, and the promise it keeps about what exists afterwards. A package may not name its own site and may not prune, substitution is one form and nothing else, and everything is validated at load.",
       "bytes": {
-        "html": 28123,
+        "html": 28517,
         "markdown": 2542
       }
     },
@@ -103,7 +103,7 @@
       "title": "Rendering, themes and design tokens | Viglet Shio",
       "description": "Pages resolve through layouts and regions to a shared section vocabulary, and a theme carries its design tokens in the W3C DTCG shape that Style Dictionary, Figma and Tokens Studio already export, so the commonest change to a site is a reviewable field edit rather than a stylesheet rewrite.",
       "bytes": {
-        "html": 30101,
+        "html": 30495,
         "markdown": 3979
       }
     },
@@ -113,7 +113,7 @@
       "title": "Delivery: REST, GraphQL and the TypeScript SDKs | Viglet Shio",
       "description": "Headless where it counts: a framework-agnostic delivery client with zero runtime dependencies, a React SDK over the same core, the shared section vocabulary, a generated Next.js starter and a bridge that makes any front end inline-editable.",
       "bytes": {
-        "html": 28718,
+        "html": 29112,
         "markdown": 2452
       }
     }
